@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div id="top" class="logo">Omnia Khalil</div>
+
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact"> Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="Hamburger-nav">
+      <div class="logo">Omnia Khalil</div>
+      <div class="Hamburger-menu">
+        <div class="Hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#Projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#Contact" onclick="toggleMenu()"> Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="profile">
+
+        <div class="section_pic_container">
+            <img src="./assets/Selected photo (1).jpg" alt="my profile picture" id="myProfile">
+        </div>
+
+        <div class="section_text">
+            <p class="section_text_p1"> Hello, I'm</p>
+            <h1 class="title">Omnia Khalil</h1>
+            <p class="section_text_p2">Software Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2"
+                 onclick="window.open('https://drive.google.com/drive/folders/1Gk0BIPD2o4UT5H_24hyiQF79BibGvQyC?usp=sharing')">
+                  Download CV
+                </button>
+
+                <button class="btn btn-color-1"
+                onclick="location.href='./#Contact'">
+                 Contact Info
+               </button>
+            </div>
+
+            <div id="socials-container">
+                <img 
+                src="./assets/icons8-linkedin-circled-150.png" alt="my linkedin profile"
+                class="icon" 
+                onclick="location.href='https://www.linkedin.com/in/omniakhalil/'" 
+                >
+
+                <img 
+                src="./assets/icons8-github-192.png" alt="my github profile"
+                class="icon" 
+                onclick="location.href='https://github.com/OmniaaKhalill'" 
+                >
+            </div>
+           
+        </div>
+        <img src="./assets/icons8-double-arrow-64.png" alt="arrow"
+        class="icon arrow"  onclick="location.href='./#about'"/>
+    </section>
+
+
+    <section id="about">
+
+        <p class="section_text_p1">Get To Know Me</p>
+        <h1 class="title"> About Me</h1>
+        <div class="section-container">
+            <!-- <div class="section_pic-container">
+                <img src="./assets/about-pic.png" alt="profile pic"
+                class="about-pic">
+            </div> -->
+            <div class="about-details-container">
+
+
+                <div class="text-container">
+
+                    <p>
+                        A Full Stack Developer with a solid foundation in Computer Engineering, holding a Bachelor's degree in the field. Skilled in building robust and scalable web applications, utilizing backend and frontend technologies like .NET and Angular within the SDLC. Known for commitment to continuous learning along with a problem-solving mindset.
+                    </p>
+                </div>
+
+
+                <div class="section_text_p1 education">
+                  <img src="./assets/icons8-education-100.png" alt="experience"
+                        class="icon">
+                   <h2>Education</h2>
+
+                  <div class="about-containers">
+                    
+                    <div class="details-container">
+                      
+                        <h4> 9-month Diploma in Professional Web Development and BI</h4> <br> <p>Information Technology Institute (ITI), <br> Ministry of Communications and Information Technology (MCIT) </p>
+
+                    </div>
+
+                    <div class="details-container">
+                      
+                        <h4> Bachelor Degree in Computer Engineering </h4> <br> <p>Faculty of Engineering, Tanta University </p>
+
+                    </div>
+                  </div>
+
+               </div>
+
+              
+            </div>
+        </div>
+
+        <img src="./assets/icons8-double-arrow-64.png" alt="arrow"
+        class="icon arrow"  onclick="location.href='./#Skills'"/>
+
+    </section>
+
+
+    <section id="Skills">
+        <p class="section_text_p1"> Explore My</p>
+        <h1 class="title"> Skills</h1>
+        <div class="skills-details-container">
+            <div class="abouts-containers">
+
+                <div class="details-containes ">     
+                   <div> <h2 class="skills-sub-titile"> Programming Languages</h2> </div>
+                    <div class="article-container">                       
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4 >C</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>C++</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>C#</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>Typescript</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>JavaScript</h4>
+                            </div>
+                        </article>
+                    </div>
+
+
+                </div>
+
+                <div class="details-containes">     
+                    <div>  <h2 class="skills-sub-titile"> Core Concepts</h2></div>
+                    <div class="article-container">                       
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>OOP</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> SOLID principles</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>Data Structures</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>Algorithms</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>SDLC</h4>
+                            </div>
+                        </article>
+                   
+                    </div>
+
+
+                </div>
+
+                <div class="details-containes">     
+                    <div><h2 class="skills-sub-titile"> Backend & Database</h2> </div>
+                    <div class="article-container">                       
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>ASP.NET</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> SQL, MSSQL</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> ORM</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>Node.js</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> MongoDB</h4>
+                            </div>
+                        </article>
+                  
+                    </div>
+
+
+                </div>
+
+                <div class="details-containes">     
+                   <div> <h2 class="skills-sub-titile"> Frontend</h2> </div>
+                    <div class="article-container">                       
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>Angular</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> jQuery</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>Bootstrap</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>CSS</h4>
+                            </div>
+                        </article>
+
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>HTML</h4>
+                            </div>
+                        </article>
+                  
+                    </div>
+
+
+                </div>
+
+                <div class="details-containes">     
+                 <div>   <h2 class="skills-sub-titile"> Other Skills</h2> </div>
+                 
+                    <div class="article-container">                       
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> Clean Architecture</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> SignalR</h4>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>GraphQL</h4>
+                            </div>
+                        </article>
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4>Dynamic Programming</h4>
+                            </div>
+                        </article>
+
+
+                        <article>
+                            <img src="./assets/checkmark.png" alt="skill icon"
+                            class="icon artcle-img"
+                            >
+                            <div>
+                                <h4> Redis</h4>
+                            </div>
+                        </article>
+                  
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <img src="./assets/icons8-double-arrow-64.png" alt="arrow"
+        class="icon arrow"  onclick="location.href='./#Projects'"/>
+    </section>
+
+    <section id="Projects">
+        <p class="section_text_p1"> Browse  My Projects</p>
+        <h1 class="title"> Recent Projects</h1>
+        <div class="skills-details-container projects-row">
+
+            <div class="details-container  color-container">
+                <div class="project-container">
+                    <img src="./assets/Guzel.png" alt="Projects1"
+                    class="project-img">
+
+                </div>
+
+             <div class="descrition">
+                <h2 class="Project-sub-titile project-title"> Guzel</h2>
+                <p >Online Cosmetics Store</p>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/OmniaaKhalill/Guzel'">Github</button>
+              </div>
+            </div>
+
+            <div class="details-container  color-container">
+                <div class="project-container">
+                    <img src="./assets/Sakany.png" alt="Project 2"
+                    class="project-img">
+
+                </div>
+                <div class="descrition" >
+                <h2 class="Project-sub-titile project-title"> Sakany</h2>
+                <p >Managing Residential Properties</p>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/OmniaaKhalill/Sakany-Project'">Github</button>
+                </div>
+            </div>
+
+            <div class="details-container  color-container">
+                <div class="project-container">
+                    <img src="./assets/examOn.png" alt="Project3 "
+                    class="project-img">
+
+                </div>
+                <div class="descrition">
+                <h2 class="Project-sub-titile project-title"> Exam On</h2>
+                <p >Administering Online Exams</p>
+                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/MariemMohamed04/Examination-System'">Github</button>
+            </div>
+            </div>
+        </div>
+
+        <div class="project-footer">
+            <div>
+              <h2 class="Project-sub-titile project-title">For more Projects Visit</h2>
+              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/OmniaaKhalill/'"> My Github</button>
+           </div>
+        </div>
+
+        
+        <img src="./assets/icons8-double-arrow-64.png" alt="arrow"
+        class="icon arrow"  onclick="location.href='./#Contact'"/>
+    </section>
+
+
+    
+    
+
+
+    <section id="Contact">
+
+        <p class="section_text_p1"> Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email-light.png" alt=" email icon"
+                class=" icon contact-icon emil-icon"
+           >
+
+                <p><a href="https://www.omniaakhalill@gmail.com"> omniaakhalill</a></p>
+            </div>
+
+            <div class="contact-info-container">
+                <img src="./assets/icons8-linkedin-circled-150.png" alt=" linked icon"
+                class=" icon contact-icon"
+                >
+
+                <p><a href="//www.linkedin.com/in/omniakhalil/" > linkedin</a></p>
+        </div>
+
+        <img src="./assets/uparrow blac.png" alt="arrow"
+        class="icon arrow"  onclick="location.href='./#desktop-nav'"/>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

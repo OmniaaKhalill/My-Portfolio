@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(16, 16, 16) 90.2%);
+}
+
+
+#myProfile{
+    
+    border-radius: 50%;
+    border: black;    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: white; /* White text color */
+}
+
+/* Transition */
+.btn {
+    transition: all 300ms ease;
+}
+
+/* Nav */
+nav,
+.nav-links {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: white; /* White text color */
+    text-decoration: none;
+    text-decoration-color: dark;
+}
+
+a:hover {
+    color: gray;
+   
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+    font-size: 2rem;
+    cursor: default;
+    color: white;
+}
+
+#Hamburger-nav {
+    display: none;
+}
+
+.Hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.Hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.Hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: white; /* White color for hamburger icon */
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    background-color: dark; /* Dark background color */
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all;
+}
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white; /* White text color */
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.Hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.Hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.Hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.Hamburger-icon span:first-child {
+    transform: none;
+}
+
+.Hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.Hamburger-icon span:first-child {
+    transform: none;
+}
+
+/* Section */
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+    display: flex;
+}
+
+#profile {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 4.5rem;
+    height: 75vh;
+    margin-bottom: 5vh;
+    position: relative;
+}
+
+.section_pic_container {
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+ 
+}
+
+.section_text {
+    align-self: center;
+    text-align: center;
+}
+
+.section_text p {
+    font-weight: 600;
+}
+
+.section_text_p1 {
+    text-align: center;
+}
+
+.section_text_p2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+/* Icon */
+.icon {
+    cursor: pointer;
+    height: 2rem;
+    margin: 0.75rem;
+}
+
+/* Buttons */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+    border: white 0.1rem solid; /* White border */
+    color: white;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+    
+   
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+    background-color: black; /* Black background color */
+    color: white; /* White text color */
+   
+}
+
+.btn-color-1:hover {
+    background-color: white; /* White background color */
+    color: black;
+}
+
+.btn-color-2 {
+    background: none;
+}
+
+.btn-color-2:hover {
+    background-color: white; /* White background color */
+    color: black;
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+#about {
+    position: relative;
+}
+
+.about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+}
+
+.about-details-container {
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+h4,h3,h2{
+    color: white;
+}
+.about-containers,
+.about-details-container {
+    display: flex;
+}
+
+.about-pic {
+    border-radius: 2rem;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+
+.details-container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    font-size: 1.3rem;
+    flex: 1;
+    background-color: dark; /* Dark background color */
+    border-radius: 2rem;
+    border: white 0.1rem solid; /* White border */
+    border-color: rgb(163, 163, 163);
+    text-align: center;
+    background: #000;
+}
+
+.details-container p {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.section-container {
+    gap: 3rem;
+    height: 80%;
+}
+
+.text-container p {
+    font-size: 1.3rem;
+}
+
+.education {
+    height: 60%;
+}
+
+.artcle-img {
+    margin: 0;
+}
+
+/* Experience */
+#Skills {
+    position: relative;
+}
+
+.skills-sub-titile {
+    color: white; /* White text color */
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+.abouts-containers {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.skills-details-container {
+    display: flex;
+    justify-content: center;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-between;
+    width: 65%;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px
+10px; /* Optional: adds space between articles */
+}
+
+.article-img {
+    margin-right: 10px; /* Optional: space between the image and text */
+}
+
+.details-containes {
+    padding: 1rem;
+    background-color:black;
+    border-radius: 2rem;
+    border: white 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+/* Project */
+#Projects {
+    position: relative;
+}
+
+.project-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.Project-sub-titile {
+    color: white; /* White text color */
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+}
+
+.projects-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+    gap: 20px; /* Th */
+}
+
+.project-container {
+    margin: 20px; /* Adjust the margin for spacing */
+    text-align: center;
+    padding: 10px;
+}
+
+.project-img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-title,
+.project-btn {
+    margin-top: 10px;
+   
+}
+
+.project-btn{
+    background: #000;
+}
+
+.color-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width of each project container */
+    box-sizing: border-box;
+    text-align: center;
+    background: #000;
+}
+
+.project-footer {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width of each project container */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+/* Contact */
+#Contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 80vh;
+    margin-bottom: 20vh;
+    position: relative;
+}
+
+.contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: white 0.1rem solid;
+    border-color: rgb(163, 163, 163);
+    margin: 2rem auto;
+    padding: 0.5rem;
+}
+
+.contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem;
+}
+
+.contact-info-container p {
+    font-size: larger;
+}
+
+.contact-icon {
+    cursor: default;
+}
+
+.emil-icon {
+    height: 2.5rem;
+}
+
+.descrition p{
+    font-style: normal;
+    font-size: 0.8rem;
+    padding-bottom: 0.8rem;
+}
