@@ -170,8 +170,8 @@ section {
 
 .section_pic_container {
     display: flex;
-    height: 400px;
-    width: 400px;
+    height: 23vw;
+    width: 25%;
     margin: auto 0;
  
 }
@@ -329,6 +329,7 @@ h4,h3,h2{
 
 .education {
     height: 60%;
+    text-align: center;
 }
 
 .artcle-img {
@@ -395,6 +396,10 @@ article {
     position: relative;
 }
 
+.Projects-details-container {
+    display: flex;
+    justify-content: center;
+}
 .project-container {
     display: flex;
     text-align: initial;
@@ -477,6 +482,7 @@ article {
     border-color: rgb(163, 163, 163);
     margin: 2rem auto;
     padding: 0.5rem;
+    width: 50%;
 }
 
 .contact-info-container {
