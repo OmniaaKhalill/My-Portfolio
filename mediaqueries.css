@@ -22,7 +22,7 @@
 
     
 
-        skills-details-container{
+        .skills-details-container{
             display: block;
         }
     
@@ -62,7 +62,11 @@
 }
 
 
-@media screen and (max-width:600px){
+
+
+@media screen and (max-width:600px)
+
+{
  
 
   section {
@@ -92,14 +96,12 @@
   #myProfile{
   
     width: 100%;
-    height:fit-content;
-  
-
+    height: 24.5vh;
   }
 
   .section_pic_container {
-    display: flex;
-    height: 23vw;
+
+   
     width: 50%;
     margin: auto 5rem;
  
@@ -342,3 +344,5 @@ h4,a{
 
 
 }
+
+
