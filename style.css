@@ -8,6 +8,7 @@
 body {
     font-family: "Poppins", sans-serif;
     background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 0%, rgb(16, 16, 16) 90.2%);
+    padding-left: 2rem;
 }
 
 
@@ -394,7 +395,10 @@ article {
 
 /* Project */
 #Projects {
+    height: auto;
     position: relative;
+    padding-bottom: 2rem;
+   
 }
 
 .Projects-details-container {
@@ -414,15 +418,15 @@ article {
     color: white; /* White text color */
     font-weight: 600;
     font-size: 1.75rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .projects-row {
     display: flex;
     justify-content: space-between;
-    margin-top: 4rem;
+    margin-top: 2rem;
     flex-wrap: wrap;
-    gap: 20px; /* Th */
+    gap: 1rem; /* Th */
 }
 
 .project-container {
@@ -440,7 +444,7 @@ article {
 
 .project-title,
 .project-btn {
-    margin-top: 10px;
+    margin-top: 1rem;
    
 }
 
@@ -463,6 +467,8 @@ article {
     flex: 1 1 calc(33.333% - 20px); /* Adjust the width of each project container */
     box-sizing: border-box;
     text-align: center;
+    padding-bottom: 3rem;
+  
 }
 
 /* Contact */
@@ -470,9 +476,12 @@ article {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 80vh;
-    margin-bottom: 20vh;
-    position: relative;
+    height: 100vh;
+padding-top: 3rem;
+position: relative;
+
+  
+
 }
 
 .contact-info-upper-container {
