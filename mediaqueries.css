@@ -405,8 +405,9 @@ nav {
     justify-content: center;
     align-items: center;
   
-    height: 60vh;
-    margin-top: 10vh;
+    height: auto;
+    padding-top: 2rem;
+    gap: 6.5rem;
  
   }
 
@@ -428,7 +429,7 @@ nav {
 }
 
   .section_text{
-    margin-top: 5vh;
+    padding-top: 3rem;
    
   }
 
@@ -439,7 +440,14 @@ nav {
 }
 
 
-
+.abouts-containers {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height:auto;
+  width: 100%;
+  margin-top: 3rem;
+}
 
   
 
@@ -503,10 +511,7 @@ p{
 .education{
   margin-top: 5vh;
 }
-.section-container {
-  flex-direction: column;
-  gap: 2rem;
-}
+
 
 .contact-icon{
   width: 6vw;
@@ -514,6 +519,11 @@ p{
 }
 
 
+.section-container {
+  padding-top: 3rem;
+  gap: 3rem;
+  height: auto;
+}
 
 
 .article-container {
